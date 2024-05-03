@@ -183,7 +183,7 @@ let corPerfil = corPersonalizada || corPadrao;
 
 console.log(corPerfil);
 
-//Comom trocar valores
+//Como trocar valores
 
 let a = 'vermelho';
 let b = 'azul';
@@ -200,3 +200,82 @@ console.log(b);
 
 //IF ELSE
 
+//Se a hora estiver entre 06:00 até 12:00 : Bom dia!
+//Se estiver entre 12:00 até 18:00 : Boa Tarde!
+//Caso contrário : Boa Noite!
+let hora = 10
+
+if (hora > 6 && hora < 12) {
+    console.log('Bom Dia!')
+} else if (hora > 12 && hora < 18) {
+    console.log('Boa tarde!')
+} else {
+    console.log('Boa Noite!')
+}
+
+// SWITCH CASE
+
+let permissao = 'diretor'
+
+switch (permissao) {
+    case 'comum':
+        console.log('usuário comum')
+        break
+    case 'gerente':
+        console.log('usuário gerente')
+        break
+    case 'diretor':
+        console.log('usuário diretor')
+        break
+    default:
+        console.log('usuário não reconhecido')
+
+
+//Laço Loop For
+
+    for (let i = 0; i < 5; i++) {console.log('Estou aprendendo',i)}
+
+    for(let i = 5; i >= 1; i--) {
+        if(i % 2 !== 0) {
+            console.log(i)
+        }
+    }
+// While
+
+    let i = 5
+
+    while(i >= 1) {
+        if(i % 2 !== 0) {
+            console.log(i)
+        }
+    }
+
+//Do While
+    let i = 1
+    do {
+        console.log('digitando!',i)
+        i++
+    } while (i <= 10)
+
+//for in
+
+    const pessoa = {
+        nome: 'Danilo',
+        idade: 33
+    }
+
+    for(let key in pessoa) {
+        console.log(key)
+    }
+
+    const cores = ['vermelho', 'azul', 'verde']
+
+    for (let indice in cores) {
+        console.log(indice, cores[indice])
+    }
+
+    //for of 
+
+    for(let cor of cores) {
+        console.log(cor)
+    }
