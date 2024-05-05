@@ -9,7 +9,7 @@ function exibeNumPrimo(lmt) {
         //         primo = false;
         //         break;
         // }           
-        if (primo) console.log(num);    
+        if (numPrimo(num)) console.log(num);    
     }
 }
 
