@@ -1,4 +1,4 @@
-//Faixe de Preço
+//Faixa de Preço
 //criar array de objetos de faixa de preço para que ele possa ser usado em um site igual o mercadolivre
 //faixas, tooltip, minimo, maximo
 
@@ -27,7 +27,7 @@ let faixas2 = [
 console.log(faixa)
 console.log(faixa2)
 
-//terceira opção
+//terceira opção (constructor function)
 
 function FaixaPreco(tooltip, minimo, maximo) {
     this.tooltip = tooltip,
