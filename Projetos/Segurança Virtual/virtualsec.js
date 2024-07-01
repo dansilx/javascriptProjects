@@ -1,6 +1,20 @@
+const convidadosAnfitriao = {
+    'Marcos': ['Danilo', 'Ana', 'Carlos'],
+    'João': ['Maria', 'Pedro', 'Lucas'],
+};
+
 function verificarEntrada() {
-    let nome = document.getElementById("nomeInput").value
-    let convidado = document.getElementById("convidadoInput").value
+
+    const nome = document.getElementById("nomeInput").value;
+    const anfitriao = document.getElementById("convidadoInput").value;
+
+    const listaConvidados = convidadosAnfitriao[anfitriao];
+    let resultado;
     
-    document.getElementById("resultado").innerText
+    if (listaConvidados && listaConvidados.includes(nome)) {
+        resultado = "Você pode entrar!";
+    } else { 
+        resultado = "Você não pode entrar!";
+    }
+    document.getElementById("resultado").innerText = resultado;
 }
